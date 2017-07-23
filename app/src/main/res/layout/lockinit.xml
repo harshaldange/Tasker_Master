@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignTop="@+id/two"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_toEndOf="@+id/textView9"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:elevation="24dp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/one"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:elevation="24dp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_toStartOf="@+id/four"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:elevation="24dp"
+        android:text=" "
+        android:layout_below="@+id/one" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/three"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/three"
+        android:layout_toEndOf="@+id/textView4"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:elevation="24dp"
+        android:text=" " />
+
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="188dp"
+        android:layout_height="30dp"
+        android:text=" "
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/TextView"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/error"
+        android:layout_toEndOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/error"
+        android:layout_marginStart="62dp"
+        android:layout_toEndOf="@+id/four" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="188dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_column="1"
+        android:layout_marginTop="11dp"
+        android:layout_row="2"
+        android:text="Enter your desired Pattern"
+        android:textAlignment="center"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Lockcontinue"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:background="@color/colorPrimary"
+        android:text="Continue"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/textView11"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView10"
+        android:layout_toStartOf="@+id/Lockcontinue"
+        android:text="Tap the corners of the box as your pattern"
+        android:textAlignment="center"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textStyle="bold" />
+</RelativeLayout>

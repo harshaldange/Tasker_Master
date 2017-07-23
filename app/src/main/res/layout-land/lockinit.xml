@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/three"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/one"
+        android:layout_column="1"
+        android:layout_marginEnd="262dp"
+        android:layout_row="1"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:elevation="24dp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/four"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/two"
+        android:layout_alignTop="@+id/three"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:elevation="24dp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/one"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/three"
+        android:layout_column="1"
+        android:layout_marginTop="13dp"
+        android:layout_row="0"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:elevation="24dp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/two"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/one"
+        android:layout_alignTop="@+id/one"
+        android:layout_toEndOf="@+id/one"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:elevation="24dp"
+        android:text=" " />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/Lockcontinue"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:background="@color/colorPrimary"
+        android:text="Continue"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBottom="@+id/three"
+        android:layout_alignStart="@+id/TextView" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="188dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/one"
+        android:layout_column="0"
+        android:layout_marginEnd="19dp"
+        android:layout_row="0"
+        android:layout_toStartOf="@+id/one"
+        android:text="   Enter your desired Pattern (Press Continue if you do not want any password)"
+        android:textAlignment="center"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textStyle="bold" />
+
+</RelativeLayout>
